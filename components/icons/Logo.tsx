@@ -1,6 +1,11 @@
-const Logo = () => {
+import { FC } from "react";
+
+const Logo: FC<{
+  className?: string;
+}> = ({ className }) => {
   return (
     <svg
+      className={className}
       width="39"
       height="34"
       viewBox="0 0 39 34"
