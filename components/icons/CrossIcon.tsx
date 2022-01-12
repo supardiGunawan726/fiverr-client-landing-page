@@ -10,8 +10,8 @@ const CrossIcon = () => {
       <path
         d="M20 4L4 20M20 20L4 4L20 20Z"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
