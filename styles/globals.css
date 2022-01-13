@@ -8,6 +8,14 @@
   mix-blend-mode: hard-light;
 }
 
+.bg-gradient-white {
+  background: linear-gradient(
+    340.76deg,
+    rgba(255, 255, 255, 0.21) 39.4%,
+    rgba(255, 255, 255, 0) 102.35%
+  );
+}
+
 .text-gradient-pink {
   background: linear-gradient(282.13deg, #d03fdc 5.92%, #f582ff 53.34%);
   background-clip: text;
@@ -25,4 +33,11 @@
 .children-backdrop-blur > svg {
   backdrop-filter: blur(4px);
   clip-path: url(#blurred);
+}
+
+.bg-dark-art {
+  background-image: url("/bg-dark.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #1e0f48;
 }
