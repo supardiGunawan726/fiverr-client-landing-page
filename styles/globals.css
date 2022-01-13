@@ -7,3 +7,22 @@
     0 0 4px 4px #05d4fc, inset 0 0 4px 4px #05d4fc;
   mix-blend-mode: hard-light;
 }
+
+.text-gradient-pink {
+  background: linear-gradient(282.13deg, #d03fdc 5.92%, #f582ff 53.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(96.18deg, #ff9983 25.22%, #ff0000 103.64%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.children-backdrop-blur > svg {
+  backdrop-filter: blur(4px);
+  clip-path: url(#blurred);
+}
