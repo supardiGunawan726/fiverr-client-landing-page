@@ -9,9 +9,9 @@ const Hero = () => {
       style={{
         background: `radial-gradient(50% 50% at 50% 50%, #313191 0%, #1E0F48 100%)`,
       }}
-      className="pt-[60px] md:pt-[80px]"
+      className="pt-[60px] md:pt-[80px] relative overflow-hidden"
     >
-      <div className="relative z-10 mx-auto max-w-screen-2xl py-4 pb-10 px-4 md:py-10 lg:px-6 xl:px-12 overflow-hidden lg:grid lg:grid-cols-2 lg:items-center">
+      <div className="relative z-10 mx-auto max-w-screen-2xl py-4 pb-24 px-4 md:py-10 lg:px-6 xl:px-24 overflow-hidden lg:grid lg:grid-cols-2 lg:items-center">
         <div>
           <h1 className="text-4xl text-white font-semibold md:text-5xl lg:text-6xl lg:leading-tight">
             <span className="text-accent">Decentralized Trading</span> on
@@ -37,36 +37,16 @@ const Hero = () => {
         </div>
         <div>
           <div className="mt-12 flex flex-col -space-y-12 md:-space-y-24 lg:-space-y-20 xl:-space-y-18">
-            <div className="flex flex-col -space-y-12 md:-space-y-24 lg:-space-y-16 xl:-space-y-36">
-              <div className="rounded-full md:ml-16 border-white border-2 aspect-square flex flex-col items-center justify-center w-max p-8 text-white ring-shadow">
+            <div className="flex items-center justify-center flex-col -space-y-12">
+              <div className="transform -translate-x-[10%] md:-translate-x-[44%] md:translate-y-[24%] rounded-full border-white border-2 aspect-square flex flex-col items-center justify-center w-max p-8 text-white ring-shadow">
                 <span>TOTAL VALUE LOCKED</span>
                 <h3 className="text-accent text-4xl">$00,000,000</h3>
               </div>
-              <div className="place-self-end md:mr-16 rounded-full border-white border-2 aspect-square flex flex-col items-center justify-center w-max p-8 text-white ring-shadow">
+              <div className="md:mt-8 transform translate-x-[10%] md:translate-x-[44%] md:-translate-y-[24%] rounded-full border-white border-2 aspect-square flex flex-col items-center justify-center w-max p-8 text-white ring-shadow">
                 <span>TOTAL TRADING VOLUME</span>
                 <h3 className="text-accent text-4xl">$00,000,000</h3>
               </div>
             </div>
-            <figure className="w-64 transform rotate-[22deg] translate-x-24 place-self-end">
-              <Image
-                className="object-cover"
-                src="/1105.png"
-                width={426}
-                height={384}
-                alt=""
-              />
-            </figure>
-          </div>
-          <div className="flex items-center md:justify-end space-x-4 mt-8">
-            <Image
-              src="/pulsechain.png"
-              width={48}
-              height={44}
-              alt="pulsechain"
-            />
-            <span className="block text-xl text-white font-semibold">
-              Powered by PulseChain
-            </span>
           </div>
         </div>
         <div className="absolute top-0 right-0 left-0 bottom-0 -z-10">
@@ -158,6 +138,28 @@ const Hero = () => {
                 </linearGradient>
               </defs>
             </svg>
+          </span>
+        </div>
+      </div>
+      <div className="absolute top-0 right-0 left-0 bottom-0 z-10">
+        <figure className="hidden md:block absolute right-0 bottom-16 w-64 transform rotate-[22deg] translate-x-24 place-self-end">
+          <Image
+            className="object-cover"
+            src="/1105.png"
+            width={426}
+            height={384}
+            alt=""
+          />
+        </figure>
+        <div className="absolute bottom-4 right-4 flex items-center md:justify-end space-x-4 mt-8">
+          <Image
+            src="/pulsechain.png"
+            width={48}
+            height={44}
+            alt="pulsechain"
+          />
+          <span className="block text-xl text-white font-semibold">
+            Powered by PulseChain
           </span>
         </div>
       </div>
