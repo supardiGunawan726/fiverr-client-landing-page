@@ -9,8 +9,10 @@ const metaTags = {
   title: "RaxDex - Decentralized Trading on PulseChain the Evolution of DeFi",
   description:
     "PulseChain Swap enables efficient trading by pooling liquidity from different traders and using its smart contract router to find the best available price. Exchange any combination of PLS-20 tokens permissionlessly with no restriction.",
-  url: "https://fiverr-client-landing-page.vercel.app/",
-  thumbnail: "https://fiverr-client-landing-page.vercel.app/thumbnail.png",
+  url: process.env.SITE_URL || "https://fiverr-client-landing-page.vercel.app",
+  thumbnail: `${
+    process.env.SITE_URL || "https://fiverr-client-landing-page.vercel.app"
+  }/thumbnail.png`,
 };
 
 const Home: NextPage = () => {
