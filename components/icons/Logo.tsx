@@ -2,12 +2,14 @@ import { FC } from "react";
 
 const Logo: FC<{
   className?: string;
-}> = ({ className }) => {
+  width?: number;
+  height?: number;
+}> = ({ className, width = "39", height = "34" }) => {
   return (
     <svg
       className={className}
-      width="39"
-      height="34"
+      width={width}
+      height={height}
       viewBox="0 0 39 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

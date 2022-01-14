@@ -29,9 +29,9 @@ const Navbar: FC = () => {
           {isOpen ? <CrossIcon /> : <BurgerIcon />}
         </button>
         <div className="hidden md:flex md:items-center md:space-x-2">
-          <NavLink href="/analytics">Analytics</NavLink>
-          <NavLink href="/governance">Governance</NavLink>
-          <Button href="/apps" withIcon={<LaunchIcon />}>
+          <NavLink href="/">Analytics</NavLink>
+          <NavLink href="/">Governance</NavLink>
+          <Button href="/" withIcon={<LaunchIcon />}>
             Launch app
           </Button>
         </div>
@@ -41,10 +41,10 @@ const Navbar: FC = () => {
           isOpen ? "top-0" : "-top-full"
         }`}
       >
-        <NavLink href="/analytics">Analytics</NavLink>
-        <NavLink href="/governance">Governance</NavLink>
+        <NavLink href="/">Analytics</NavLink>
+        <NavLink href="/">Governance</NavLink>
         <div className="w-max px-4 py-4">
-          <Button href="/apps" withIcon={<LaunchIcon />}>
+          <Button href="/" withIcon={<LaunchIcon />}>
             Launch app
           </Button>
         </div>

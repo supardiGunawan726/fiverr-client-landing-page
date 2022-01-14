@@ -5,7 +5,7 @@ import LaunchIcon from "../icons/LaunchIcon";
 
 const Features: FC = () => {
   return (
-    <section className="p-4 max-w-screen-2xl mx-auto lg:px-6 lg:py-12 lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
+    <section className="p-4 max-w-screen-2xl mx-auto md:px-6 lg:py-12 lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
       <div className="lg:order-2 relative z-10 lg:col-span-6">
         <div className="text-4xl font-semibold md:text-5xl lg:text-6xl lg:leading-tight">
           <span className="text-gradient-pink">Lighting fast AMM Dex.</span>
@@ -14,14 +14,14 @@ const Features: FC = () => {
           </h2>
           <p></p>
         </div>
-        <p className="text-[#313190] mt-4">
+        <p className="text-[#313190] mt-4 lg:text-xl xl:text-2xl 2xl:text-[28px]">
           PulseChain Swap enables efficient trading by pooling liquidity from
           different traders and using its smart contract router to find the best
           available price. Exchange any combination of PLS-20 tokens
           permissionlessly with no restriction.
         </p>
         <div className="w-max mt-6">
-          <Button href="/trade" withIcon={<LaunchIcon />}>
+          <Button href="/" withIcon={<LaunchIcon />}>
             Start trading
           </Button>
         </div>

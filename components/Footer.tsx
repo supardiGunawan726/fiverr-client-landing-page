@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import GithubIcon from "./icons/GithubIcon";
+import Logo from "./icons/Logo";
 import TwitterIcon from "./icons/TwitterIcon";
 
 const links = [
@@ -66,8 +67,8 @@ const communities = [
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-dark text-white">
-      <div className="p-4 md:px-6 lg:px-12 max-w-screen-2xl mx-auto md:py-12 md:grid md:grid-cols-12 md:space-x-8">
+    <footer className="bg-dark text-white relative overflow-hidden">
+      <div className="p-4 md:px-6 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto md:py-12 lg:py-16 xl:py-24 2xl:py-32 md:grid md:grid-cols-12 md:space-x-8 relative z-10">
         <div className="md:col-span-3">
           <h2 className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-[42px] font-semibold">
             PulseChain Swap
@@ -108,6 +109,11 @@ const Footer: FC = () => {
             </div>
           </div>
         </nav>
+      </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-end z-0 opacity-[42%]">
+        <div className="transform translate-x-1/4">
+          <Logo width={343} height={294} />
+        </div>
       </div>
     </footer>
   );

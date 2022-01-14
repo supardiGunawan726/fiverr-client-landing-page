@@ -30,7 +30,7 @@ const informations = [
 const Information = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="p-4 md:p-6 lg:py-8 xl:py-12 max-w-screen-2xl mx-auto space-y-6 relative z-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12">
+      <div className="p-4 md:px-6 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto space-y-6 relative z-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12">
         {informations.map((information, index) => (
           <figure
             key={index}
@@ -48,7 +48,7 @@ const Information = () => {
               <h4 className="font-semibold text-xl md:text-2xl lg:text-3xl xl:text-[34px]">
                 {information.title}
               </h4>
-              <p className="mt-1 md:text-lg lg:text-2xl xl:text-[28px]">
+              <p className="mt-1 lg:text-xl xl:text-2xl 2xl:text-[28px]">
                 {information.description}
               </p>
             </figcaption>

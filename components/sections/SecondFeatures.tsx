@@ -36,7 +36,7 @@ const SecondFeatures: FC = () => {
           objectPosition="center"
         />
       </span>
-      <div className="max-w-screen-2xl mx-auto p-4 md:px-6">
+      <div className="max-w-screen-2xl mx-auto p-4 md:px-6 lg:px-16 xl:px-24">
         <h2 className="text-white text-[40px] md:text-[50px] lg:text-[63px] text-4xl font-semibold md:text-5xl lg:text-6xl lg:leading-tight max-w-[529px]">
           <span className="text-accent">Swap</span>,{" "}
           <span className="text-secondary-accent">Trade</span>,{" "}
@@ -59,7 +59,7 @@ const SecondFeatures: FC = () => {
                   alt={feature.title}
                 />
               </span>
-              <figcaption className="bg-gradient-white p-4 text-white shadow-[7px_12px_12px_rgba(0,_0,_0,_0.04)] backdrop-blur-sm md:relative group-odd:md:col-start-1 group-odd:md:col-span-7 group-even:md:col-start-6 group-even:md:col-span-8 md:row-start-1 md:rounded-[38px] group-odd:md:rounded-r-none group-even:md:rounded-l-none md:px-8 md:mb-[28px] lg:mb-16 xl:mb-24">
+              <figcaption className="bg-gradient-white p-4 text-white shadow-[7px_12px_12px_rgba(0,_0,_0,_0.04)] backdrop-blur-sm md:relative group-odd:md:col-start-1 group-odd:md:col-span-7 group-even:md:col-start-6 group-even:md:col-span-8 md:row-start-1 md:rounded-[38px] group-odd:md:rounded-r-none group-even:md:rounded-l-none md:px-8 md:mb-[28px] lg:mb-16 xl:mb-1/4">
                 <h4 className="text-3xl md:text-4xl lg:text-5xl xl:text-[55px] group-first:text-accent group-last:text-secondary group-even:text-secondary-accent font-semibold md:absolute md:bottom-full md:transform md:translate-y-1/2 group-even:md:right-[28px]">
                   {feature.title}
                 </h4>

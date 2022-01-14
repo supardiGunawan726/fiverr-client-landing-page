@@ -23,11 +23,11 @@ const Hero = () => {
             liquidity. Friction-less yield.
           </p>
           <div className="w-max mt-6 flex items-center space-x-4">
-            <Button href="/app" withIcon={<LaunchIcon />}>
+            <Button href="/" withIcon={<LaunchIcon />}>
               Launch App
             </Button>
             <Button
-              href="/app"
+              href="/"
               withIcon={<DocsIcon />}
               className="!bg-secondary/75"
             >
@@ -141,8 +141,8 @@ const Hero = () => {
           </span>
         </div>
       </div>
-      <div className="absolute top-0 right-0 left-0 bottom-0 z-10">
-        <figure className="hidden md:block absolute right-0 bottom-16 w-64 transform rotate-[22deg] translate-x-24 place-self-end">
+      <div className="absolute top-0 right-0 left-0 bottom-0">
+        <figure className="hidden md:block absolute z-10 right-0 bottom-16 w-64 transform rotate-[22deg] translate-x-24 place-self-end">
           <Image
             className="object-cover"
             src="/1105.png"
