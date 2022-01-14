@@ -7,18 +7,18 @@ const Hero = () => {
   return (
     <section
       style={{
-        background: `radial-gradient(50% 50% at 50% 50%, #313191 0%, #1E0F48 100%);`,
+        background: `radial-gradient(50% 50% at 50% 50%, #313191 0%, #1E0F48 100%)`,
       }}
       className="pt-[60px] md:pt-[80px]"
     >
-      <div className="relative z-10 mx-auto max-w-screen-2xl py-4 pb-10 px-4 md:py-10 lg:px-6 overflow-hidden lg:grid lg:grid-cols-2 lg:items-center">
+      <div className="relative z-10 mx-auto max-w-screen-2xl py-4 pb-10 px-4 md:py-10 lg:px-6 xl:px-12 overflow-hidden lg:grid lg:grid-cols-2 lg:items-center">
         <div>
           <h1 className="text-4xl text-white font-semibold md:text-5xl lg:text-6xl lg:leading-tight">
             <span className="text-accent">Decentralized Trading</span> on
             PulseChain the Evolution of{" "}
             <span className="text-secondary">DeFi</span>
           </h1>
-          <p className="text-white mt-2">
+          <p className="text-white mt-2 lg:text-xl xl:text-[36px] lg:leading-tight">
             Green, Effecient and Light-speed Blockchain swaps. Next-level
             liquidity. Friction-less yield.
           </p>

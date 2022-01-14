@@ -63,7 +63,7 @@ const SecondFeatures: FC = () => {
                 <h4 className="text-3xl md:text-4xl lg:text-5xl xl:text-[55px] group-first:text-accent group-last:text-secondary group-even:text-secondary-accent font-semibold md:absolute md:bottom-full md:transform md:translate-y-1/2 group-even:md:right-[28px]">
                   {feature.title}
                 </h4>
-                <p className="mt-2 group-even:md:text-right lg:text-xl lg:mt-4 xl:mt-6 xl:text-2xl 2xl:text-[28px]">
+                <p className="my-2 group-even:md:text-right lg:text-xl lg:my-4 xl:my-6 xl:text-2xl 2xl:text-[28px]">
                   {feature.description}
                 </p>
               </figcaption>
